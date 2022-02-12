@@ -1,0 +1,104 @@
+﻿@model IEnumerable<Factory.Usuario>
+
+@{
+    ViewBag.Title = "Index";
+    SelectList perfiles = ViewBag.perfiles;
+}
+
+<h2>Index</h2>
+<form id="frm" class="validate-form">
+    <div class="row">
+        <div class="col-md-3 mb-3">
+            @Html.Label("Pefil") 
+            @Html.DropDownList("perfil",perfiles , new { @class = "form-control", @style = "width:100%;" })            
+        </div>
+        <div class="col mb-3">
+            <label class="w-100">&nbsp;</label>
+            <button type="submit" class="btn btn-primary" id="btnSearch"><i class="fa fa-search"></i> Buscar</button>
+        </div>
+    </div>
+</form>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IDENTIFICACION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreCompeto)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.FechaNacimiento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DIRECCION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TELEFONO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sexo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMAIL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USUARIO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pwd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Edad)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IDENTIFICACION)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreCompeto)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaNacimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DIRECCION)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TELEFONO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sexo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EMAIL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.USUARIO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pwd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Edad)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+            </td>
+        </tr>
+    }
+
+</table>

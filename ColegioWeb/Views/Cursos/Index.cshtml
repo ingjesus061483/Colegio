@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Factory.Curso>
+
+@{
+    SelectList categorias = ViewBag.Categorias;
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<form id="frm" class="validate-form">
+    <div class="row">
+        <div class="col-md-3 mb-3">
+            @Html.Label("Pefil")
+            @Html.DropDownList("categoria", categorias , new { @class = "form-control", @style = "width:100%;" })
+        </div>
+        <div class="col mb-3">
+            <label class="w-100">&nbsp;</label>
+            <button type="submit" class="btn btn-primary" id="btnSearch"><i class="fa fa-search"></i> Buscar</button>
+        </div>
+    </div>
+</form>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(Model => Model.Duracion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(Model => Model.UnidadTiempo )
+        </th>
+        <th>
+            @Html.DisplayNameFor(Model=>Model .ValorTotal )  
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duracion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnidadTiempo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+</table>

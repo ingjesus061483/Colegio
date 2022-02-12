@@ -1,0 +1,24 @@
+C:\Users\jesus\source\repos\WebApplication2\Factory\bin\Debug\Factory.dll
+C:\Users\jesus\source\repos\WebApplication2\Factory\bin\Debug\Factory.pdb
+C:\Users\jesus\source\repos\WebApplication2\Factory\obj\Debug\Factory.csprojAssemblyReference.cache
+C:\Users\jesus\source\repos\WebApplication2\Factory\obj\Debug\Factory.csproj.CoreCompileInputs.cache
+C:\Users\jesus\source\repos\WebApplication2\Factory\obj\Debug\Factory.dll
+C:\Users\jesus\source\repos\WebApplication2\Factory\obj\Debug\Factory.pdb
+D:\Desktop\Colegio\Factory\bin\Debug\Factory.dll
+D:\Desktop\Colegio\Factory\bin\Debug\Factory.pdb
+D:\Desktop\Colegio\Factory\obj\Debug\Factory.csprojAssemblyReference.cache
+D:\Desktop\Colegio\Factory\obj\Debug\Factory.csproj.CoreCompileInputs.cache
+D:\Desktop\Colegio\Factory\obj\Debug\Factory.dll
+D:\Desktop\Colegio\Factory\obj\Debug\Factory.pdb
+D:\Desktop\Nueva carpeta\Colegio\Factory\bin\Debug\Factory.dll
+D:\Desktop\Nueva carpeta\Colegio\Factory\bin\Debug\Factory.pdb
+D:\Desktop\Nueva carpeta\Colegio\Factory\obj\Debug\Factory.csprojAssemblyReference.cache
+D:\Desktop\Nueva carpeta\Colegio\Factory\obj\Debug\Factory.csproj.CoreCompileInputs.cache
+D:\Desktop\Nueva carpeta\Colegio\Factory\obj\Debug\Factory.dll
+D:\Desktop\Nueva carpeta\Colegio\Factory\obj\Debug\Factory.pdb
+C:\Users\jesus\Documents\github\Colegio\Factory\bin\Debug\Factory.dll
+C:\Users\jesus\Documents\github\Colegio\Factory\bin\Debug\Factory.pdb
+C:\Users\jesus\Documents\github\Colegio\Factory\obj\Debug\Factory.csprojAssemblyReference.cache
+C:\Users\jesus\Documents\github\Colegio\Factory\obj\Debug\Factory.csproj.CoreCompileInputs.cache
+C:\Users\jesus\Documents\github\Colegio\Factory\obj\Debug\Factory.dll
+C:\Users\jesus\Documents\github\Colegio\Factory\obj\Debug\Factory.pdb

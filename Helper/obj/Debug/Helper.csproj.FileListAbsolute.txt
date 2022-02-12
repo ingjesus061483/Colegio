@@ -1,0 +1,76 @@
+C:\Users\jesus\source\repos\WebApplication2\Helper\bin\Debug\Helper.dll
+C:\Users\jesus\source\repos\WebApplication2\Helper\bin\Debug\Helper.pdb
+C:\Users\jesus\source\repos\WebApplication2\Helper\bin\Debug\Datos.dll
+C:\Users\jesus\source\repos\WebApplication2\Helper\bin\Debug\Factory.dll
+C:\Users\jesus\source\repos\WebApplication2\Helper\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\jesus\source\repos\WebApplication2\Helper\bin\Debug\System.Memory.dll
+C:\Users\jesus\source\repos\WebApplication2\Helper\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\jesus\source\repos\WebApplication2\Helper\bin\Debug\System.Buffers.dll
+C:\Users\jesus\source\repos\WebApplication2\Helper\bin\Debug\Datos.pdb
+C:\Users\jesus\source\repos\WebApplication2\Helper\bin\Debug\Datos.dll.config
+C:\Users\jesus\source\repos\WebApplication2\Helper\bin\Debug\Factory.pdb
+C:\Users\jesus\source\repos\WebApplication2\Helper\bin\Debug\System.Memory.xml
+C:\Users\jesus\source\repos\WebApplication2\Helper\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\jesus\source\repos\WebApplication2\Helper\bin\Debug\System.Buffers.xml
+C:\Users\jesus\source\repos\WebApplication2\Helper\obj\Debug\Helper.csprojAssemblyReference.cache
+C:\Users\jesus\source\repos\WebApplication2\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
+C:\Users\jesus\source\repos\WebApplication2\Helper\obj\Debug\Helper.csproj.CopyComplete
+C:\Users\jesus\source\repos\WebApplication2\Helper\obj\Debug\Helper.dll
+C:\Users\jesus\source\repos\WebApplication2\Helper\obj\Debug\Helper.pdb
+D:\Desktop\Colegio\Helper\bin\Debug\Helper.dll
+D:\Desktop\Colegio\Helper\bin\Debug\Helper.pdb
+D:\Desktop\Colegio\Helper\bin\Debug\Datos.dll
+D:\Desktop\Colegio\Helper\bin\Debug\Factory.dll
+D:\Desktop\Colegio\Helper\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Desktop\Colegio\Helper\bin\Debug\System.Memory.dll
+D:\Desktop\Colegio\Helper\bin\Debug\System.Numerics.Vectors.dll
+D:\Desktop\Colegio\Helper\bin\Debug\System.Buffers.dll
+D:\Desktop\Colegio\Helper\bin\Debug\Datos.pdb
+D:\Desktop\Colegio\Helper\bin\Debug\Datos.dll.config
+D:\Desktop\Colegio\Helper\bin\Debug\Factory.pdb
+D:\Desktop\Colegio\Helper\bin\Debug\System.Memory.xml
+D:\Desktop\Colegio\Helper\bin\Debug\System.Numerics.Vectors.xml
+D:\Desktop\Colegio\Helper\bin\Debug\System.Buffers.xml
+D:\Desktop\Colegio\Helper\obj\Debug\Helper.csprojAssemblyReference.cache
+D:\Desktop\Colegio\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
+D:\Desktop\Colegio\Helper\obj\Debug\Helper.csproj.CopyComplete
+D:\Desktop\Colegio\Helper\obj\Debug\Helper.dll
+D:\Desktop\Colegio\Helper\obj\Debug\Helper.pdb
+D:\Desktop\Nueva carpeta\Colegio\Helper\bin\Debug\Helper.dll
+D:\Desktop\Nueva carpeta\Colegio\Helper\bin\Debug\Helper.pdb
+D:\Desktop\Nueva carpeta\Colegio\Helper\bin\Debug\Datos.dll
+D:\Desktop\Nueva carpeta\Colegio\Helper\bin\Debug\Factory.dll
+D:\Desktop\Nueva carpeta\Colegio\Helper\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Desktop\Nueva carpeta\Colegio\Helper\bin\Debug\System.Memory.dll
+D:\Desktop\Nueva carpeta\Colegio\Helper\bin\Debug\System.Numerics.Vectors.dll
+D:\Desktop\Nueva carpeta\Colegio\Helper\bin\Debug\System.Buffers.dll
+D:\Desktop\Nueva carpeta\Colegio\Helper\bin\Debug\Datos.pdb
+D:\Desktop\Nueva carpeta\Colegio\Helper\bin\Debug\Datos.dll.config
+D:\Desktop\Nueva carpeta\Colegio\Helper\bin\Debug\Factory.pdb
+D:\Desktop\Nueva carpeta\Colegio\Helper\bin\Debug\System.Memory.xml
+D:\Desktop\Nueva carpeta\Colegio\Helper\bin\Debug\System.Numerics.Vectors.xml
+D:\Desktop\Nueva carpeta\Colegio\Helper\bin\Debug\System.Buffers.xml
+D:\Desktop\Nueva carpeta\Colegio\Helper\obj\Debug\Helper.csprojAssemblyReference.cache
+D:\Desktop\Nueva carpeta\Colegio\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
+D:\Desktop\Nueva carpeta\Colegio\Helper\obj\Debug\Helper.csproj.CopyComplete
+D:\Desktop\Nueva carpeta\Colegio\Helper\obj\Debug\Helper.dll
+D:\Desktop\Nueva carpeta\Colegio\Helper\obj\Debug\Helper.pdb
+C:\Users\jesus\Documents\github\Colegio\Helper\bin\Debug\Helper.dll
+C:\Users\jesus\Documents\github\Colegio\Helper\bin\Debug\Helper.pdb
+C:\Users\jesus\Documents\github\Colegio\Helper\bin\Debug\Datos.dll
+C:\Users\jesus\Documents\github\Colegio\Helper\bin\Debug\Factory.dll
+C:\Users\jesus\Documents\github\Colegio\Helper\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\jesus\Documents\github\Colegio\Helper\bin\Debug\System.Memory.dll
+C:\Users\jesus\Documents\github\Colegio\Helper\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\jesus\Documents\github\Colegio\Helper\bin\Debug\System.Buffers.dll
+C:\Users\jesus\Documents\github\Colegio\Helper\bin\Debug\Datos.pdb
+C:\Users\jesus\Documents\github\Colegio\Helper\bin\Debug\Datos.dll.config
+C:\Users\jesus\Documents\github\Colegio\Helper\bin\Debug\Factory.pdb
+C:\Users\jesus\Documents\github\Colegio\Helper\bin\Debug\System.Memory.xml
+C:\Users\jesus\Documents\github\Colegio\Helper\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\jesus\Documents\github\Colegio\Helper\bin\Debug\System.Buffers.xml
+C:\Users\jesus\Documents\github\Colegio\Helper\obj\Debug\Helper.csprojAssemblyReference.cache
+C:\Users\jesus\Documents\github\Colegio\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
+C:\Users\jesus\Documents\github\Colegio\Helper\obj\Debug\Helper.csproj.CopyComplete
+C:\Users\jesus\Documents\github\Colegio\Helper\obj\Debug\Helper.dll
+C:\Users\jesus\Documents\github\Colegio\Helper\obj\Debug\Helper.pdb

@@ -1,0 +1,108 @@
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\Datos.dll.config
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\Datos.dll
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\Datos.pdb
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\System.Buffers.dll
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\System.Memory.dll
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\System.Text.Json.dll
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\System.ValueTuple.dll
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\System.Buffers.xml
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\System.Memory.xml
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\System.Text.Json.xml
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\jesus\source\repos\WebApplication2\Datos\bin\Debug\System.ValueTuple.xml
+C:\Users\jesus\source\repos\WebApplication2\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\jesus\source\repos\WebApplication2\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\jesus\source\repos\WebApplication2\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\jesus\source\repos\WebApplication2\Datos\obj\Debug\Datos.dll
+C:\Users\jesus\source\repos\WebApplication2\Datos\obj\Debug\Datos.pdb
+D:\Desktop\Colegio\Datos\bin\Debug\Datos.dll.config
+D:\Desktop\Colegio\Datos\bin\Debug\Datos.dll
+D:\Desktop\Colegio\Datos\bin\Debug\Datos.pdb
+D:\Desktop\Colegio\Datos\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Desktop\Colegio\Datos\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Desktop\Colegio\Datos\bin\Debug\System.Buffers.dll
+D:\Desktop\Colegio\Datos\bin\Debug\System.Memory.dll
+D:\Desktop\Colegio\Datos\bin\Debug\System.Numerics.Vectors.dll
+D:\Desktop\Colegio\Datos\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Desktop\Colegio\Datos\bin\Debug\System.Text.Encodings.Web.dll
+D:\Desktop\Colegio\Datos\bin\Debug\System.Text.Json.dll
+D:\Desktop\Colegio\Datos\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Desktop\Colegio\Datos\bin\Debug\System.ValueTuple.dll
+D:\Desktop\Colegio\Datos\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Desktop\Colegio\Datos\bin\Debug\System.Buffers.xml
+D:\Desktop\Colegio\Datos\bin\Debug\System.Memory.xml
+D:\Desktop\Colegio\Datos\bin\Debug\System.Numerics.Vectors.xml
+D:\Desktop\Colegio\Datos\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Desktop\Colegio\Datos\bin\Debug\System.Text.Encodings.Web.xml
+D:\Desktop\Colegio\Datos\bin\Debug\System.Text.Json.xml
+D:\Desktop\Colegio\Datos\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Desktop\Colegio\Datos\bin\Debug\System.ValueTuple.xml
+D:\Desktop\Colegio\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+D:\Desktop\Colegio\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+D:\Desktop\Colegio\Datos\obj\Debug\Datos.csproj.CopyComplete
+D:\Desktop\Colegio\Datos\obj\Debug\Datos.dll
+D:\Desktop\Colegio\Datos\obj\Debug\Datos.pdb
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\Datos.dll.config
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\Datos.dll
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\Datos.pdb
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\System.Buffers.dll
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\System.Memory.dll
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\System.Numerics.Vectors.dll
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\System.Text.Encodings.Web.dll
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\System.Text.Json.dll
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\System.ValueTuple.dll
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\System.Buffers.xml
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\System.Memory.xml
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\System.Numerics.Vectors.xml
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\System.Text.Encodings.Web.xml
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\System.Text.Json.xml
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Desktop\Nueva carpeta\Colegio\Datos\bin\Debug\System.ValueTuple.xml
+D:\Desktop\Nueva carpeta\Colegio\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+D:\Desktop\Nueva carpeta\Colegio\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+D:\Desktop\Nueva carpeta\Colegio\Datos\obj\Debug\Datos.csproj.CopyComplete
+D:\Desktop\Nueva carpeta\Colegio\Datos\obj\Debug\Datos.dll
+D:\Desktop\Nueva carpeta\Colegio\Datos\obj\Debug\Datos.pdb
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\Datos.dll.config
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\Datos.dll
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\Datos.pdb
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\System.Buffers.dll
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\System.Memory.dll
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\System.Text.Json.dll
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\System.ValueTuple.dll
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\System.Buffers.xml
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\System.Memory.xml
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\System.Text.Json.xml
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\jesus\Documents\github\Colegio\Datos\bin\Debug\System.ValueTuple.xml
+C:\Users\jesus\Documents\github\Colegio\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\jesus\Documents\github\Colegio\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\jesus\Documents\github\Colegio\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\jesus\Documents\github\Colegio\Datos\obj\Debug\Datos.dll
+C:\Users\jesus\Documents\github\Colegio\Datos\obj\Debug\Datos.pdb
