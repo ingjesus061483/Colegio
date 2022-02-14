@@ -194,7 +194,7 @@ namespace Helper
         }
         public void InsertarNovedad(int estadomatricula, Novedad novedad )
         {
-            Datos.InsertarNovedad(novedad.Matricula, estadomatricula, novedad.TipoNovedad, novedad.fecha, novedad.Descripcion);
+            Datos.InsertarNovedad(novedad.Matricula, estadomatricula, novedad.TipoNovedad, novedad.Fecha, novedad.Descripcion);
         }
         public void insertarMatricula(Matricula matricula)
         {
@@ -499,6 +499,39 @@ namespace Helper
             {
                 throw ex;
                     
+            }
+        }
+      public   List <Novedad >GetNovedades( int?matricula)
+        {
+            try
+            {
+                List<TipoNovedad> tipoNovedads = listarTipoNovedadList();
+                table = Datos.listarNovedad();
+                List<Novedad> novedads = new List<Novedad>();
+                foreach (DataRow row in table.Rows)
+                {
+                    Novedad novedad = new Novedad
+                    {
+                        Id = int.Parse(row["id"].ToString()),
+                        TipoNovedad = int.Parse(row["tiponovedad"].ToString()),
+                        Matricula = int.Parse(row["matricula"].ToString()),
+                        Fecha = DateTime.Parse(row["fecha"].ToString()),
+                        TipoNovedads = tipoNovedads,
+                        Descripcion = row["descripcion"].ToString()
+
+                    };
+                    novedads.Add(novedad);
+                }
+                if (matricula !=null)
+                {
+                    novedads = novedads.FindAll(x => x.Matricula == matricula);
+                }
+                return novedads;
+            }
+            catch (Exception ex )
+            {
+                throw ex;
+            
             }
         }
     }

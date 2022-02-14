@@ -340,6 +340,22 @@ namespace Datos
                 CerrarConexion();
             }
         }
+        public DataTable listarNovedad()
+        {
+            try
+            {
+                AbrirConexion();
+                comand = InicializarComando(conexion, CommandType.StoredProcedure, "listarNovedad");
+                comand.Parameters.Add("novedad", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+                comand.ExecuteNonQuery();
+                bd = LlenarDataset(comand, "novedad");
+                return bd.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public void InsertarUsuario(string IDENTIFICACION, string NOMBRE,  string APELLIDO, int EstadoCivil, DateTime fechaNacimiento, string DIRECCION, 
                                     string TELEFONO,int  sexo, string EMAIL, string USUARIO, string pwd,int perfil)     
         {

@@ -21,14 +21,39 @@ namespace ColegioWeb.Controllers
             helper = new DatosHelper();
         }
         // GET: Novedades
-        public ActionResult Index()
+        public ActionResult Index( int ?matricula)
         {
-
-            return View();
+            novedades = new List<Novedad>();
+            try
+            {
+                novedades = helper.GetNovedades(matricula);
+                ViewBag.matricula = matricula;
+                return View(novedades);
+            }
+            catch (Exception ex)
+            {
+                TempData["tipo"] = 2;
+                TempData["message"] = ex.Message;
+                return View (novedades );
+            }
         }
 
         // GET: Novedades/Details/5
-        
+        public ActionResult Details(int? id)
+        {
+            try
+            {
+                novedades = helper.GetNovedades(null);
+                Novedad novedad = novedades.Find(x => x.Id == id);
+                return View(novedad);
+            }
+            catch (Exception ex)
+            {
+                TempData["tipo"] = 2;
+                TempData["message"] = ex.Message;
+                return RedirectToAction("index");
+            }
+        }
 
         // GET: Novedades/Create
         public ActionResult Create(int matricula)
@@ -72,7 +97,7 @@ namespace ColegioWeb.Controllers
                     Matricula = int.Parse(collection["matricula"]),
                     TipoNovedad = int.Parse(collection["tiponovedad"]),
                     Descripcion = collection["descripcion"],
-                    fecha = DateTime.Parse(collection["fecha"])
+                    Fecha = DateTime.Parse(collection["fecha"])
                 };
                 helper.InsertarNovedad(EstadoMatricula, novedad);
                 TempData["tipo"] = 1;

@@ -11,13 +11,28 @@ namespace Factory
     {
         public int Id { get; set; }
         public int Matricula { get; set; }
-
+        public List <Matricula > Matriculas { get; set; }
+        public List <TipoNovedad > TipoNovedads { get; set; }
         [Display(Name = "Fecha novedad")]
-        public DateTime fecha { get; set; }
+        public DateTime Fecha { get; set; }
 
         [Display(Name = "Tipo de novedad")]
         public int TipoNovedad { get; set; }
 
         public string Descripcion { get; set; }
+        public Matricula matricula 
+        {
+            get
+            {
+                return Matriculas.Find(x => x.Id == Matricula);
+            }
+        }
+        public TipoNovedad tipoNovedad
+        {
+            get
+            {
+                return TipoNovedads.Find(x => x.Id == TipoNovedad);
+            }
+        }
     }
 }
