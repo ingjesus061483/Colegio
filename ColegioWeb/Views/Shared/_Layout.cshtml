@@ -22,9 +22,19 @@
     <script type="text/javascript">
         var tipo =@tipo;
         var message = "@message";
-        if (tipo != 0)
+        switch (tipo )
         {
-            alert(message);
+            case 1: {
+                alert(message);
+                break;
+            }
+            case 2: {
+                alert(message);
+                break;
+            }
+            case 3: {
+                alert(message);
+            }
         }
     </script>
 </head>
@@ -41,9 +51,12 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Usuario", "Index", "Usuarios")</li>
-                    <li>@Html.ActionLink("Cursos", "Index", "Cursos")</li>
                     <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Tipo novedad", "Index", "Tiponovedades")</li>
+                    <li>@Html.ActionLink("Curso", "Index", "Cursos")</li>
+                    <li>@Html.ActionLink("Usuario", "Index", "Usuarios")</li>
+                    <li>@Html.ActionLink("Matricula", "index", "matriculas")</li>
+                    <li>@Html.ActionLink("Novedades", "index", "novedades")</li>
                     <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
                     <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
                 </ul>

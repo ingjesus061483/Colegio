@@ -134,6 +134,96 @@ namespace Datos
                 CerrarConexion();
             }
         }
+        public DataTable  Listarmatriculas()
+        {
+            try
+            {
+                AbrirConexion();
+                comand = InicializarComando(conexion, CommandType.StoredProcedure, "Listarmatriculas");
+                comand.Parameters.Add("matriculas", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+                comand.ExecuteNonQuery();
+                bd = LlenarDataset(comand, "matriculas");
+                return bd.Tables [0];
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public void InsertarNovedad(int matricula ,int estadomatricula,int tiponovedad ,DateTime fecha ,
+            string  descripcion)
+        {
+            try
+            {
+                AbrirConexion();
+                comand = InicializarComando(conexion, CommandType.StoredProcedure, "insertarnovedad");
+                comand.Parameters.Add("P_matricula", OracleDbType.Int32).Value = matricula;
+                comand.Parameters.Add("P_estadomatricula", OracleDbType.Int32).Value = estadomatricula;
+                comand.Parameters.Add("P_tiponovedad", OracleDbType.Int32).Value = tiponovedad;
+                comand.Parameters.Add("P_fecha", OracleDbType.Date).Value = fecha;
+                comand.Parameters.Add("P_descripcion", OracleDbType.Varchar2).Value = descripcion;
+                comand.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public void actualizarTipoNovedad(int id, string nombre, string descripcion)
+        {
+            try
+            {
+                AbrirConexion();
+                comand = InicializarComando(conexion, CommandType.StoredProcedure, "actualizarTipoNovedad");
+                comand.Parameters.Add("P_id", OracleDbType.Varchar2).Value =id;
+                comand.Parameters.Add("P_nombre", OracleDbType.Varchar2).Value = nombre;
+                comand.Parameters.Add("P_descripcion", OracleDbType.Varchar2).Value = descripcion;
+                comand.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                CerrarConexion();
+            }
+        }
+        public void InsertarTipoNovedad(string nombre ,string descripcion)
+        {
+            try
+            {
+                AbrirConexion();
+                comand = InicializarComando(conexion, CommandType.StoredProcedure, "InsertarTipoNovedad");
+                comand.Parameters.Add("P_nombre", OracleDbType.Varchar2).Value = nombre;
+                comand.Parameters.Add("P_descripcion", OracleDbType.Varchar2).Value = descripcion;
+                comand.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                CerrarConexion();
+            }
+        }
+        public DataTable  listarTipoNovedad()
+        {
+            try
+            {
+                AbrirConexion();
+                comand = InicializarComando(conexion, CommandType.StoredProcedure, "listarTipoNovedad");
+                comand.Parameters.Add("TipoNovedad", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+                comand.ExecuteNonQuery();
+                bd = LlenarDataset(comand, "tiponovedad");
+                return bd.Tables[0];                    
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public void insertarMatricula(   string   Codigo ,  int Curso , int Jornada , int Estudiante , decimal Valor ,
                                         DateTime Fechainicio , DateTime Fechafin, string Descripcion)
         {

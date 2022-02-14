@@ -14,6 +14,31 @@ namespace ColegioWeb
     {
         public static string App_Name = "Tienda virtual";
         public static string url;
+        public static  DateTime GetFinalDate(DateTime fechainicio, Curso  curso)
+        {
+            DateTime fechaFin =DateTime .Now;
+            int duracion = curso.Duracion;
+            switch (curso.UnidadTiempo)
+            {
+                case 1:
+                    {
+                        fechaFin = fechainicio.AddDays(duracion);
+                        break;
+                    }
+                case 2:
+                    {
+                        fechaFin = fechainicio.AddMonths(duracion);
+                        break;
+
+                    }
+                case 3:
+                    {
+                        fechaFin = fechainicio.AddYears(duracion);
+                        break;
+                    }
+            }
+            return fechaFin;
+        }
         public static SelectList GetSelectList(DataTable table)
         {
             List<SelectListItem> result = new List<SelectListItem>();

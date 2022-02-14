@@ -11,7 +11,8 @@ namespace Factory
     {
         public override  int ID { get; set; }
         public override int Sexo { get; set; }
-
+        public override List <Sexo> Sexos { get; set; }
+        public override List<EstadoCivil> EstadoCivils { get; set; }
         [Display(Name = "Identificacion")]
         public  override string IDENTIFICACION { get; set; }
 
@@ -43,6 +44,15 @@ namespace Factory
         public override  int EstadoCivil { get; set; }
 
         public int Perfil { get; set; }
+        public List <Perfil >Perfiles { get; set; }
+
+       public Perfil Rol
+        {
+            get
+            {
+                return Perfiles.Find(x => x.Id == Perfil);
+            }
+        }
 
         [Display(Name = "Nombre Completo")]
         public string NombreCompeto
@@ -61,6 +71,20 @@ namespace Factory
                 TimeSpan dif =_fechaActual - FechaNacimiento;
                 return dif.Days / 365;               
             } 
+        }
+        public EstadoCivil Civil
+        {
+            get
+            {
+                return EstadoCivils.Find(x => x.Id == EstadoCivil);
+            }
+        }
+        public Sexo Sex
+        {
+            get
+            {
+                return Sexos.Find(x => x.Id == Sexo);
+            }
         }
     }
 }

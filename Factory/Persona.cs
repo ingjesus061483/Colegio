@@ -13,11 +13,13 @@ namespace Factory
         public abstract string NOMBRE { get; set; }
         public abstract string APELLIDO { get; set; }
         public abstract  int EstadoCivil { get; set; }
+        public abstract List <EstadoCivil > EstadoCivils { get; set; }
 
         public abstract DateTime  FechaNacimiento { get; set; }
         public abstract  string DIRECCION { get; set; }
         public abstract string TELEFONO { get; set; }
         public abstract  int Sexo { get; set; }
+        public abstract List< Sexo>Sexos { get; set; }
         public abstract string EMAIL { get; set; }
 
     }

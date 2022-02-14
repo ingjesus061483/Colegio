@@ -123,6 +123,8 @@
     <Compile Include="Controllers\CursosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MatriculasController.cs" />
+    <Compile Include="Controllers\NovedadesController.cs" />
+    <Compile Include="Controllers\TipoNovedadesController.cs" />
     <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -176,6 +178,10 @@
     <Content Include="Views\Usuarios\Details.cshtml" />
     <Content Include="Views\Matriculas\Create.cshtml" />
     <Content Include="Views\Matriculas\Index.cshtml" />
+    <Content Include="Views\Matriculas\Details.cshtml" />
+    <Content Include="Views\TipoNovedades\Index.cshtml" />
+    <Content Include="Views\TipoNovedades\Create.cshtml" />
+    <Content Include="Views\Novedades\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
