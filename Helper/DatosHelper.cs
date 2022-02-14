@@ -506,6 +506,7 @@ namespace Helper
             try
             {
                 List<TipoNovedad> tipoNovedads = listarTipoNovedadList();
+                List<Matricula> matriculas = Listarmatriculas(null, null);
                 table = Datos.listarNovedad();
                 List<Novedad> novedads = new List<Novedad>();
                 foreach (DataRow row in table.Rows)
@@ -517,8 +518,8 @@ namespace Helper
                         Matricula = int.Parse(row["matricula"].ToString()),
                         Fecha = DateTime.Parse(row["fecha"].ToString()),
                         TipoNovedads = tipoNovedads,
-                        Descripcion = row["descripcion"].ToString()
-
+                        Descripcion = row["descripcion"].ToString(),
+                        Matriculas=matriculas 
                     };
                     novedads.Add(novedad);
                 }
