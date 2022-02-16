@@ -1,14 +1,12 @@
 ﻿@model Factory.Usuario
 
 @{
-    ViewBag.Title = "Details";
+        ViewBag.Title = "Detalle de usuario " + Model.NombreCompeto ;
 }
 
-<h2>Details</h2>
+<h2>@ViewBag.Title</h2>
 
 <div>
-    <h4>Usuario</h4>
-    <hr />
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.IDENTIFICACION)
@@ -116,8 +114,11 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("matricular", "Create","matriculas", new { estudiante = Model.ID },null) |
+    @if (Model.Rol.Nombre == "Estudiante")
+    {
+        @Html.ActionLink(" Crear matricular", "Create", "matriculas", new { estudiante = Model.ID }, null) 
+    }
     @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Eliminar", "Delete", new { id = Model.ID }) |
+    @Html.ActionLink("Listado de usuarios", "Index")
 </p>

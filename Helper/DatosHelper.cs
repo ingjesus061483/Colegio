@@ -181,7 +181,7 @@ namespace Helper
                     {
                         Id = int.Parse(row["id"].ToString()),
                         Nombre = row["nombre"].ToString(),
-                        Descripcion = row["descriocion"].ToString()
+                        Descripcion = row["descripcion"].ToString()
                     };
                     tipoNovedades.Add(tipoNovedad);
                 }
@@ -308,6 +308,7 @@ namespace Helper
                         Descripcion = row["Descripcion"].ToString(),
                         Valor = decimal.Parse(row["valor"].ToString()),
                         Duracion = int.Parse(row["duracion"].ToString()),
+                        CantidadEstudiantesMatriculados=int .Parse (row["CantidadEstudiantesMatriculados"].ToString()),
                         UnidadTiempo = int.Parse(row["unidadtiempo"].ToString()) ,
                         UnidadTiempos =unidadTiempos ,
                         Categoria =int .Parse (row["categoria"].ToString ()),
@@ -380,11 +381,12 @@ namespace Helper
                 throw ex;
             }
         }
+    
         public DataTable listarTipoNovedades()
         {
             try
             {
-                return Datos.SeleccionTabla("TipoNovedades");
+                return Datos.listarTipoNovedades();
             }
             catch (Exception ex)
             {

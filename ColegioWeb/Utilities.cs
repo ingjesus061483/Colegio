@@ -12,7 +12,7 @@ namespace ColegioWeb
 {
     public abstract  class Utilities
     {
-        public static string App_Name = "Tienda virtual";
+        public static string App_Name = "Colegio";
         public static string url;
         public static  DateTime GetFinalDate(DateTime fechainicio, Curso  curso)
         {

@@ -19,8 +19,18 @@ namespace ColegioWeb.Controllers
         // GET: TipoNovedades
         public ActionResult Index()
         {
-            tipoNovedades = helper.listarTipoNovedadList();
-            return View(tipoNovedades );
+            tipoNovedades = new List<TipoNovedad>();
+            try
+            {
+                tipoNovedades = helper.listarTipoNovedadList();
+                return View(tipoNovedades);
+            }
+            catch (Exception ex)
+            {
+                TempData["tipo"] = 2;
+                TempData["message"] = ex.Message;
+                return View(tipoNovedades);
+            }
         }
         // GET: TipoNovedades/Create
         public ActionResult Create()

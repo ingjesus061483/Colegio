@@ -114,6 +114,22 @@ namespace Datos
                 throw ex;
             }
         }
+        public DataTable listarTipoNovedades()
+        {
+            try
+            {
+                AbrirConexion();
+                comand = InicializarComando(conexion, CommandType.StoredProcedure, "listarTipoNovedad");
+                comand.Parameters.Add("TipoNovedad", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+                comand.ExecuteNonQuery();
+                bd = LlenarDataset(comand, "tiponovedad");
+                return bd.Tables[0];
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
         public DataTable SeleccionTabla(string tabla)
         {
             try

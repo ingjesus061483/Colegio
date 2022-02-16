@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<Factory.Matricula>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "listado de matriculas";
 }
 
-<h2>Index</h2>
+<h2>@ViewBag.Title</h2>
 
 <table class="table">
     <tr>
@@ -44,10 +44,9 @@
     <td>
         @Html.DisplayFor(modelItem => item.estadoMatricula.Nombre)
     </td>
-    <td>
-        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+    <td>        
+        @Html.ActionLink("Ver detalles", "Details", new { id = item.Id }) |
+       
     </td>
 </tr>
 }

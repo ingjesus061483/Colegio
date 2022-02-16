@@ -8,6 +8,13 @@ namespace ColegioWeb
         // Para obtener más información sobre las uniones, visite https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
+            bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
+        "~/Scripts/jquery-ui.js"));
+
+            bundles.Add(new StyleBundle("~/Content/jquery-ui").Include(
+                          "~/Content/jquery-ui.css"));
+
+
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
@@ -24,6 +31,7 @@ namespace ColegioWeb
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/plantilla.css",
                       "~/Content/site.css"));
         }
     }

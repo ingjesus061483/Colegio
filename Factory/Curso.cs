@@ -14,7 +14,10 @@ namespace Factory
 
         [Display(Name = "Curso")]
         public string Nombre { get; set; }
-        
+
+        [Display(Name = "Cantidad de estudiantes matriculados")]
+        public int CantidadEstudiantesMatriculados { get; set; }
+
         public string Descripcion { get; set; }
         public int Categoria { get; set; }
         public decimal Valor { get; set; }
@@ -23,7 +26,7 @@ namespace Factory
 
         [Display(Name = "Unida de tiempo")]
         public int UnidadTiempo { get; set; }
-
+       
         [Display(Name = "Total pagar")]
         public decimal ValorTotal
         {

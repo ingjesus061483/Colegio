@@ -1,21 +1,19 @@
 ﻿@model Factory.Curso
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Editar Currso "+ Model .Nombre  ;
     SelectList categorias = ViewBag.Categorias;
     SelectList unidadtiempo = ViewBag.UnidadTiempo;
 }
 
-<h2>Edit</h2>
+
 
 
 @using (Html.BeginForm())
 {
-    @Html.AntiForgeryToken()
-    
+    @Html.AntiForgeryToken()    
 <div class="form-horizontal">
-    <h4>Curso</h4>
-    <hr />
+
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
     @Html.HiddenFor(model => model.Id)
 
@@ -75,7 +73,7 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("listado de cursos", "Index")
 </div>
 
 @section Scripts {
