@@ -10,10 +10,12 @@ namespace ColegioWeb
         {
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
         "~/Scripts/jquery-ui.js"));
-
+            bundles.Add(new StyleBundle("~/Content/alertify").Include(
+                          "~/Content/alertifyjs/alertify.css"));
             bundles.Add(new StyleBundle("~/Content/jquery-ui").Include(
                           "~/Content/jquery-ui.css"));
-
+            bundles.Add(new ScriptBundle("~/bundles/alertify").Include(
+                       "~/Scripts/alertify.js", "~/Scripts/alertify.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));

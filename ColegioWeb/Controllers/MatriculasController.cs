@@ -86,22 +86,27 @@ namespace ColegioWeb.Controllers
             {
                 // TODO: Add insert logic here
                 List<Curso> cursos = hlp.ListarCursoslist();
+                List<Jornada> jornadas = hlp.GetJornadas();
+                List<Usuario> usuarios = hlp.ListarUsuarios();
+                List<EstadoMatricula> estadoMatriculas = hlp.GetEstadoMatriculas();
                 Curso curso = cursos.Find(x => x.Id == int.Parse(collection["curso"]));
                 DateTime Fechainicio = DateTime.Parse(collection["fechainicio"]);
                 DateTime fechaFin = ColegioWeb.Utilities.GetFinalDate(Fechainicio, curso);
                 Matricula matricula = new Matricula
                 {
                     Curso = int.Parse(collection["curso"]),
+                    Cursos=cursos,
                     Jornada = int.Parse(collection["jornada"]),
+                    jornadas=jornadas,
                     Estudiante = int.Parse(collection["estudiante"]),
+                    Usuarios=usuarios ,
                     Valor = decimal.Parse(collection["valor"]),
                     Fechainicio = Fechainicio  ,
-                    Descripcion = collection["descripciom"],
-                    EstadoMatricula = int.Parse(collection["estadomatricula"])
+                    Descripcion = collection["descripciom"]
                 };
+                hlp.insertarMatricula(matricula);
                 TempData["tipo"] = 1;
                 TempData["message"] = "El registro se ha insertado con exito";
-                hlp.insertarMatricula(matricula);
                 return RedirectToAction("Index");
             }
             catch(Exception ex)
