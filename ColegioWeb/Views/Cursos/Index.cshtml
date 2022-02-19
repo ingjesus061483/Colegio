@@ -24,12 +24,13 @@
         </form>
     </div>
 </div>
-<div style="padding-bottom:20px;padding-top:20px">
-    @Html.ActionLink("Crear curso", "Create",null, htmlAttributes: new { @class = "button" })
-</div>
+
 <div class="card">
     <div class=" header">@ViewBag.Title</div>
     <div class="body">
+        <div style="padding-bottom:20px;">
+            @Html.ActionLink("Crear curso", "Create", null, htmlAttributes: new { @class = "button" })
+        </div>
         <table class="table">
             <tr>
                 <th>
@@ -70,7 +71,7 @@
                     </td>
 
                     <td>
-                        @Html.ActionLink("Ver detalles", "Details", new { id = item.Id },htmlAttributes:new { @class="buttonCol"}) 
+                        @Html.ActionLink("Ver detalles", "Details", new { id = item.Id }, htmlAttributes: new { @class = "buttonCol" })
 
                     </td>
                 </tr>

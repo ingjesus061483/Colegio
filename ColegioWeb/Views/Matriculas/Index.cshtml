@@ -116,13 +116,17 @@
             </dl>
         </div>
     </div>
-    <div style=" padding-top:20px;padding-bottom:20px;">
-        @Html.ActionLink("Crear matricula", "create", new { estudiante = estudiante.ID }, htmlAttributes: new { @class = "button" })
-    </div>
+    
 }
 <div class="card">
     <div class=" header">@ViewBag.Title</div>
     <div class=" body">
+        @if (estudiante != null)
+        {
+            <div style="padding-bottom:20px;">
+                @Html.ActionLink("Crear matricula", "create", new { estudiante = estudiante.ID }, htmlAttributes: new { @class = "button" })
+            </div>
+        }
         <table class="table">
             <tr>
                 <th>

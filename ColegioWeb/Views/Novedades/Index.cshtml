@@ -4,16 +4,17 @@
     ViewBag.Title = "Listado de novedades";
     int? matricula = ViewBag.natricula;
 }
-@if (matricula != null)
-{
-    <div style=" padding-bottom:20px;">
-        @Html.ActionLink("Crear novedad", "Create", null, htmlAttributes: new { @class = "button" })
 
-    </div>
-}
 <div class=" card">
     <div class="header">@ViewBag.Title</div>
     <div class="body">
+        @if (matricula != null)
+        {
+            <div style=" padding-bottom:20px;">
+                @Html.ActionLink("Crear novedad", "Create", null, htmlAttributes: new { @class = "button" })
+
+            </div>
+        }
         <table class="table">
             <tr>
                 <th>
@@ -47,7 +48,7 @@
                         @Html.DisplayFor(modelItem => item.Descripcion)
                     </td>
                     <td>
-                        @Html.ActionLink("Ver detalles ", "Details", new { id = item.Id },htmlAttributes:new { @class="buttonCol"})
+                        @Html.ActionLink("Ver detalles ", "Details", new { id = item.Id }, htmlAttributes: new { @class = "buttonCol" })
 
                     </td>
                 </tr>
