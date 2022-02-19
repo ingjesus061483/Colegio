@@ -11,6 +11,7 @@ namespace ColegioWeb.Controllers
 {
     public class MatriculasController : Controller
     {
+        SelectList estadoMatricula;
         DatosHelper hlp;
         SelectList cursos;
         SelectList jornadas;
@@ -21,13 +22,24 @@ namespace ColegioWeb.Controllers
             hlp = new DatosHelper();
         }
         // GET: Matriculas
-        public ActionResult Index(int? estudiante, int? estadomatricula)
-        {
-
+        public ActionResult Index(string  identificacion, int? estadomatricula)
+        {            
             matriculas = new List<Matricula>();
             try
             {
-                matriculas = hlp.Listarmatriculas(estudiante, estadomatricula);
+                table = hlp.ListarestadoMatricula();
+                estadoMatricula = Utilities.GetSelectList(table);
+                ViewBag.estadoMatricula = estadoMatricula;
+                List<Usuario> usuarios = hlp.ListarUsuarios();
+                Usuario usuario = usuarios.Find(x => x.IDENTIFICACION == identificacion && x.Rol.Nombre == "Estudiante");
+                ViewBag.estudiante = null;
+                int? id = null;
+                if (usuario !=null)
+                {
+                   ViewBag.estudiante = usuario;
+                    id = usuario.ID;
+                }
+                matriculas = hlp.Listarmatriculas(id , estadomatricula);
                 return View(matriculas);
             }
             catch (Exception ex )
@@ -56,10 +68,19 @@ namespace ColegioWeb.Controllers
         }
 
         // GET: Matriculas/Create
-        public ActionResult Create(int estudiante)
+        public ActionResult Create(int? estudiante)
         {
             try
             {
+                List<Usuario> usuarios = hlp.ListarUsuarios();
+                Usuario usuario = usuarios.Find(x => x.ID == estudiante);
+                if (usuario == null)
+                {
+                    TempData["tipo"] = 2;
+                    TempData["message"] = "No hay usuario disponible";
+                    return RedirectToAction("Index");
+
+                }
                 table = hlp.ListarCursos();
                 cursos = ColegioWeb.Utilities.GetSelectList(table);
                 table = hlp.ListarJornadas();
@@ -89,9 +110,6 @@ namespace ColegioWeb.Controllers
                 List<Jornada> jornadas = hlp.GetJornadas();
                 List<Usuario> usuarios = hlp.ListarUsuarios();
                 List<EstadoMatricula> estadoMatriculas = hlp.GetEstadoMatriculas();
-                Curso curso = cursos.Find(x => x.Id == int.Parse(collection["curso"]));
-                DateTime Fechainicio = DateTime.Parse(collection["fechainicio"]);
-                DateTime fechaFin = ColegioWeb.Utilities.GetFinalDate(Fechainicio, curso);
                 Matricula matricula = new Matricula
                 {
                     Curso = int.Parse(collection["curso"]),
@@ -101,7 +119,7 @@ namespace ColegioWeb.Controllers
                     Estudiante = int.Parse(collection["estudiante"]),
                     Usuarios=usuarios ,
                     Valor = decimal.Parse(collection["valor"]),
-                    Fechainicio = Fechainicio  ,
+                    Fechainicio = DateTime.Parse(collection["fechainicio"])  ,
                     Descripcion = collection["descripciom"]
                 };
                 hlp.insertarMatricula(matricula);
@@ -116,6 +134,5 @@ namespace ColegioWeb.Controllers
                 return RedirectToAction("Index");
             }
         }
-
     }
 }

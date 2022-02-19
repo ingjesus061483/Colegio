@@ -2,68 +2,79 @@
 
 @{
     SelectList categorias = ViewBag.Categorias;
-    ViewBag.Title = "Listado e cursos";
+    ViewBag.Title = "Listado de cursos";
 }
-<h2>@ViewBag.Title</h2>
-<form id="frm" class="validate-form">
-    <div class="row">
-        <div class="col-md-3 mb-3">
-            @Html.Label("Categorias")
-            @Html.DropDownList("categoria", categorias ,"seleccione", new { @class = "form-control", @style = "width:100%;" })
-        </div>
-        <div class="col mb-3">
-            <label class="w-100">&nbsp;</label>
-            <button type="submit" class="btn btn-primary" id="btnSearch"><i class="fa fa-search"></i> Buscar</button>
-        </div>
+<div class="card">
+    <div class="header">Escoge la categoria </div>
+    <div class="body">
+        <form id="frm" class="validate-form">
+            <div class="form-horizontal">
+                <div class="form-group">
+                    @Html.Label("Categorias", htmlAttributes: new { @class = "control-label col-md-2 " })
+                    <div class="col-md-10">
+                        @Html.DropDownList("categoria", categorias, "seleccione", htmlAttributes: new { @class = "form-control", @style = "width:100%;" })
+                    </div>                    
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <button type="submit" class="button" id="btnSearch">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
-</form>
+</div>
+<div style="padding-bottom:20px;padding-top:20px">
+    @Html.ActionLink("Crear curso", "Create",null, htmlAttributes: new { @class = "button" })
+</div>
+<div class="card">
+    <div class=" header">@ViewBag.Title</div>
+    <div class="body">
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(Model => Model.Duracion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(Model => Model.Tiempo.Nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(Model => Model.CantidadEstudiantesMatriculados)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(Model => Model.ValorTotal)
+                </th>
 
-<p>
-    @Html.ActionLink("Crear curso", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Nombre)
-        </th>
-        <th>
-            @Html.DisplayNameFor(Model => Model.Duracion)
-        </th>
-        <th>
-            @Html.DisplayNameFor(Model => Model.Tiempo.Nombre)
-        </th>
-        <th>
-            @Html.DisplayNameFor(Model => Model.CantidadEstudiantesMatriculados)
-        </th>
-        <th>
-            @Html.DisplayNameFor(Model => Model.ValorTotal)
-        </th>
+                <th></th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Duracion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Tiempo.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(moelItem => item.CantidadEstudiantesMatriculados)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ValorTotal)
+                    </td>
 
-        <th></th>
-    </tr>
-    @foreach (var item in Model)
-    {
-<tr>
-    <td>
-        @Html.DisplayFor(modelItem => item.Nombre)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Duracion)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Tiempo.Nombre)
-    </td>
-    <td>
-        @Html.DisplayFor(moelItem => item .CantidadEstudiantesMatriculados)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.ValorTotal)
-    </td>
+                    <td>
+                        @Html.ActionLink("Ver detalles", "Details", new { id = item.Id },htmlAttributes:new { @class="buttonCol"}) 
 
-    <td>
-        @Html.ActionLink("Ver detalles", "Details", new { id = item.Id }) |
-
-    </td>
-</tr>
-    }
-</table>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

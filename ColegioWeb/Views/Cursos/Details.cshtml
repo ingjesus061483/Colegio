@@ -1,47 +1,63 @@
 ﻿@model Factory.Curso
 
 @{
-    ViewBag.Title = "Detalle del cursos "+Model .Nombre;
+    ViewBag.Title = "Detalle del cursos ";
 }
+<div class="card">
+    <div class="header">@ViewBag.Title</div>
+    <div class="body">
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Category.Nombre)
+            </dt>
 
-<h2>@ViewBag.Title</h2>
+            <dd>
+                @Html.DisplayFor(model => model.Category.Nombre)
+            </dd>
 
-<div>
-   
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.Nombre)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Category.Nombre)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Nombre)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(Model => Model.CantidadEstudiantesMatriculados)
+            </dt>
+            <dd>
+                @Html.DisplayFor(Model => Model.CantidadEstudiantesMatriculados)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(Model => Model.Duracion)
+            </dt>
+            <dd>
+                @Html.DisplayFor(Model => Model.Duracion)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(Model => Model.Tiempo.Nombre)
+            </dt>
+            <dd>
+                @Html.DisplayFor(Model => Model.Tiempo.Nombre)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(Model => Model.ValorTotal)
+            </dt>
+            <dd>
+                @Html.DisplayFor(Model => Model.ValorTotal)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Nombre)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Nombre)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Descripcion)
-        </dt>
-        <dt>
-            @Html.DisplayNameFor(Model=>Model.CantidadEstudiantesMatriculados )
-        </dt>
-        <dd>
-            @Html.DisplayFor(Model => Model.CantidadEstudiantesMatriculados)
-        </dd>
-        <dd>
-            @Html.DisplayFor(model => model.Descripcion)
-        </dd>
-    </dl>
+            <dt>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Descripcion)
+            </dd>
+        </dl>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Editar curso", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("listado de cursos", "Index")|
-    @Html.ActionLink("Delete", "Delete", new { id = Model.Id })
-</p>
+<div style=" padding-top:20px" >
+    @Html.ActionLink("Editar curso", "Edit", new { id = Model.Id },htmlAttributes:new { @class="button"}) 
+    @Html.ActionLink("listado de cursos", "Index",null, htmlAttributes: new { @class = "button" })
+    @Html.ActionLink("Delete", "Delete", new { id = Model.Id }, htmlAttributes: new { @class = "button" })
+</div>

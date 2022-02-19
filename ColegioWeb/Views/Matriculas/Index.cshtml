@@ -1,54 +1,174 @@
-﻿@model IEnumerable<Factory.Matricula>
+﻿@using Factory;
+@model IEnumerable<Matricula>
 
 @{
     ViewBag.Title = "listado de matriculas";
+    SelectList estadoMatricula = ViewBag.estadoMatricula;
+    Usuario estudiante =(Usuario) ViewBag.estudiante;
 }
-
-<h2>@ViewBag.Title</h2>
-
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Codigo)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Fechainicio)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Fechafin)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Valor)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.estadoMatricula.Nombre)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-<tr>
-    <td>
-        @Html.DisplayFor(modelItem => item.Codigo)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Fechainicio)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Fechafin)
-    </td>
-
-    <td>
-        @Html.DisplayFor(modelItem => item.Valor)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.estadoMatricula.Nombre)
-    </td>
-    <td>        
-        @Html.ActionLink("Ver detalles", "Details", new { id = item.Id }) |
-       
-    </td>
-</tr>
+@if (estudiante == null)
+{
+    <div class="card">
+        <div class="header">Escoge el estudiante</div>
+        <div class="body">
+            <form id="frm" class="validate-form">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        @Html.Label("Identificacion", htmlAttributes: new { @class = "control-label col-md-2 " })
+                        <div class="col-md-10">
+                            <input type="text" name="identificacion" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.Label("Estado matricula", htmlAttributes: new { @class = "control-label col-md-2 " })
+                        <div class="col-md-10">
+                            @Html.DropDownList("estadomatricula", estadoMatricula, "seleccione", htmlAttributes: new { @class = "form-control", @style = "width:100%;" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <button type="submit" class="button" id="btnSearch">Buscar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 }
+@if (estudiante != null)
+{
+    <div class="card" >
+        <div class="header"> Resulado de busqueda</div>
+        <div class="body ">
+            <dl class="dl-horizontal">
+                <dt>
+                  Identificacion 
+                </dt>
 
-</table>
+                <dd>
+                    @estudiante.IDENTIFICACION
+                </dd>
+
+                <dt>
+                    Nombre Competo
+                </dt>
+
+                <dd>
+                    @estudiante.NombreCompeto 
+                </dd>
+
+                <dt>
+                    Estado civil
+                </dt>
+
+                <dd>
+                    @estudiante .Civil.Nombre
+                </dd>
+
+                <dt>
+                    Fecha de Nacimiento 
+                </dt>
+
+                <dd>
+                   @estudiante.FechaNacimiento
+                </dd>
+
+                <dt>
+                    Direccion
+                </dt>
+
+                <dd>
+                    @estudiante.DIRECCION
+                </dd>
+
+                <dt>
+                    Telefono
+                </dt>
+
+                <dd>
+                    @estudiante.TELEFONO
+                </dd>
+
+                <dt>
+                    Sexo
+                </dt>
+
+                <dd>
+                    @estudiante.Sex.Nombre
+                </dd>
+
+                <dt>
+                    Email
+                </dt>
+
+                <dd>
+                    @estudiante.EMAIL
+                </dd>
+
+                <dt>
+                    Edad
+                </dt>
+
+                <dd>
+                    @estudiante.Edad
+                </dd>
+
+            </dl>
+        </div>
+    </div>
+    <div style=" padding-top:20px;padding-bottom:20px;">
+        @Html.ActionLink("Crear matricula", "create", new { estudiante = estudiante.ID }, htmlAttributes: new { @class = "button" })
+    </div>
+}
+<div class="card">
+    <div class=" header">@ViewBag.Title</div>
+    <div class=" body">
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Codigo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fechainicio)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fechafin)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Valor)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.estadoMatricula.Nombre)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Codigo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Fechainicio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Fechafin)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Valor)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.estadoMatricula.Nombre)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Ver detalles", "Details", new { id = item.Id }, htmlAttributes: new { @class = "buttonCol" })
+
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>
